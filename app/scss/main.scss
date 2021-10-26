@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+@import '~bootstrap/scss/bootstrap';
+
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins';
+
+@import 'fonts';
+
+@import 'base/fonts', 'base/base';
+
+@import 'components/modal', 'components/home', 'components/page',
+  'components/accordion', 'components/form', 'components/floating-label',
+  'components/radio-checkbox', 'components/range-slider', 'components/preloader',
+  'components/congratulation', 'components/tags', 'components/list-view',
+  // 'components/ckyc', 'components/kyc-details', 'components/select-plan',
+    'components/kyc-details',
+  'components/form-progress', 'components/progress-step',
+  'components/clix-table',
+  'components/disbursal',
+    'components/datepicker',
+    'components/account',
+  'components/radio-button', 'components/myAccount';
+
+@import 'layout/button';

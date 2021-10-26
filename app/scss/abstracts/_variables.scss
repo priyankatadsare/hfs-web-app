@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Container's maximum width
+/// @type Length
+$container-max-width: 1150px !default;
+$max-width: 1150px !default;
+
+/////////Edited by Apoorv///////////
+/* Text Variables */
+//// @type Color
+$white: #fff !default;
+$primary-color: #df0e6f !default; //$blue
+$secondary-color: #3e4a6d !default;
+$secondary-light-color: #4b70b8 !default;
+$secondary-lighter-color: #009bde !default;
+$green-color: #20b274 !default;
+
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 20%) !default; // #333
+$gray-dark: lighten($gray-base, 40%) !default; // #666
+$gray: lighten($gray-base, 60%) !default; // #999
+$gray-light: lighten($gray-base, 80%) !default; // #ccc
+$gray-lighter: lighten($gray-base, 89.9%) !default; // #e5e5e5 
+$gray-lightest: lighten($gray-base, 95%) !default; // #f2f2f2
+
+
+$heading-base-color: #000 !default; // 000
+$heading-lighten: rgba($heading-base-color, .73);
+$text-color: #282c47;
+
+/* Theme font-family Variables */
+$EncodeSans-Light: 'EncodeSans-Light' !default;
+$EncodeSans-Regular: 'EncodeSans-Regular' !default;
+$EncodeSans-Medium: 'EncodeSans-Medium' !default;
+$EncodeSans-Bold: 'EncodeSans-Bold' !default;
+$EncodeSans-SemiBold: 'EncodeSans-SemiBold' !default;
+
+/* Heading font size variable */
+$font-size-h1: 64px !default;
+/* Font size 64px */
+$font-size-h2: 48px !default;
+/* Font size 48px */
+$font-size-h3: 24px !default;
+/* Font size 24px */
+$font-size-h4: 16px !default;
+/* Font size 16px */
+
+/* Theme Other Variables */
+$font-size-base: 14px;
+/* Font size 14px */
+$font-size-base-small: 12px;
+/* Font size 12px */
+$fieldBorder: rgba(40, 50, 60, 0.3) !default;
+/* Feild Border color */
+$line-height-base: 1.428571429 !default;
+/* Default Line-height */
+$line-height-computed: floor(($font-size-base * $line-height-base)) !default; //** Computed "line-height"

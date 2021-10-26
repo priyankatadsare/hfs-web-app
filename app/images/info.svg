@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(40,44,71,.4)}
+        </style>
+    </defs>
+    <path id="Path_508" d="M98.652 89.652a9 9 0 1 0 9 9 9.01 9.01 0 0 0-9-9zm0 3.75a.75.75 0 1 1-.75.75.75.75 0 0 1 .75-.752zm1.687 10.5h-3.374a.75.75 0 1 1 0-1.5h.935V97.9h-.56a.75.75 0 1 1 0-1.5h1.312a.75.75 0 0 1 .75.75v5.25h.937a.75.75 0 1 1 0 1.5z" class="cls-1" data-name="Path 508" transform="translate(-89.652 -89.652)"/>
+</svg>

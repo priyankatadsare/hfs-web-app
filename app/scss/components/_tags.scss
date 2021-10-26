@@ -1,0 +1,26 @@
+.tag {
+	border-radius: 70px;
+	background-color: #fdf2c1;
+	font-size: 12px;
+	  font-weight: 600;
+	  color: $text-color;
+	  min-width: 120px;
+	  height: 28px;
+
+	  &.clockTag {
+		  i {
+			  font-size: 16px;
+			  margin-right: 5px;
+		  }
+	  }
+}
+
+@include breakpoint(mobile) {
+	.tag {
+		min-width: auto;
+		padding: 0 4px;
+		&.clockTag i {
+			font-size: 12px;
+		}
+	}
+}

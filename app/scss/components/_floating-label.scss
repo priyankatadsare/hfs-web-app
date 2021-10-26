@@ -1,0 +1,69 @@
+.has-float-label {
+	position: relative;
+	&.focused, &.populated { 
+		> label {
+			background-color: #fff;
+			font-size: 75%;
+			top: -8px;
+			line-height: inherit;
+			opacity: 1;
+			visibility: visible;
+			z-index: 9;
+		}
+	}
+
+	&.has-error {
+		> label {
+			color: #dc3545;
+		}
+
+		.form-control {
+			border-color: #dc3545;
+		}
+	}
+	&.focused {
+		> label {
+			color: $secondary-lighter-color;
+		}
+
+		.input-group {
+			border-color: $secondary-lighter-color;
+		}
+
+		.form-control {
+			border-color: $secondary-lighter-color;
+		}
+	}
+	> label {
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		left: 12px;
+		top: 0;
+		padding: 0 5px;
+		margin-bottom: 0;
+		cursor: default;
+		-webkit-transition: all .2s;
+		transition: all .2s;
+	
+		
+	}
+	.input-group {
+		border: solid 1px rgba(40, 44, 71, 0.2);
+		.input-group-text {
+			background-color: transparent;
+			border-radius: 2px;
+			border: none;
+		}
+		.input-group-addon {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			margin-top: -8px;
+			z-index: 9;
+		}
+		.form-control {
+			border: none;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+    <defs>
+        <style>
+            .cls-1{fill:rgba(40,44,71,.3);stroke:rgba(0,0,0,0)}
+        </style>
+    </defs>
+    <g id="Group_410" data-name="Group 410" transform="translate(-45.5 -45.5)">
+        <path id="Path_531" d="M55 64a9 9 0 1 1 9-9 9.01 9.01 0 0 1-9 9zm-5.546-15.073A8.224 8.224 0 0 0 55 63.229a8.151 8.151 0 0 0 4.83-1.571zm10.978 12.249A8.225 8.225 0 0 0 55 46.771a8.14 8.14 0 0 0-4.953 1.662z" class="cls-1" data-name="Path 531"/>
+        <path id="Path_532" d="M56.914 48a8.914 8.914 0 1 0 8.914 8.914A8.924 8.924 0 0 0 56.914 48zM48.6 56.914a8.3 8.3 0 0 1 2.778-6.2l10.49 12.871A8.31 8.31 0 0 1 48.6 56.914zm13.736 6.3l-10.5-12.879a8.31 8.31 0 0 1 10.5 12.879z" class="cls-1" data-name="Path 532" transform="translate(-1.914 -1.914)"/>
+        <g id="Group_409" data-name="Group 409" transform="translate(49.837 50.424)">
+            <g id="Group_406" data-name="Group 406" transform="translate(7.107)">
+                <path id="Path_533" d="M304.262 151.518a.536.536 0 0 0 .057-.755l-1.152-1.34a.536.536 0 0 0-.755-.057l-1.05.9 1.85 2.151z" class="cls-1" data-name="Path 533" transform="translate(-301.362 -149.238)"/>
+            </g>
+            <g id="Group_407" data-name="Group 407" transform="translate(0 4.042)">
+                <path id="Path_534" d="M139.145 243.562l-3.456 2.972-.151 2 2 .151 3.4-2.923z" class="cls-1" data-name="Path 534" transform="translate(-135.538 -243.562)"/>
+            </g>
+            <g id="Group_408" data-name="Group 408" transform="translate(4.809 1.555)">
+                <path id="Path_535" d="M249.546 189.178l1.746-1.5-1.85-2.151-1.689 1.453z" class="cls-1" data-name="Path 535" transform="translate(-247.752 -185.524)"/>
+            </g>
+        </g>
+    </g>
+</svg>

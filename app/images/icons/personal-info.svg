@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.055" height="23" viewBox="0 0 25.055 23">
+    <defs>
+        <style>
+            .cls-1{fill:#df0e6f}
+        </style>
+    </defs>
+    <g id="personal-info-icon" transform="translate(-192.138 -109.208)">
+        <path id="Path_410" d="M246.489 291.979h9.1a.489.489 0 0 0 0-.979h-9.1a.489.489 0 1 0 0 .979z" class="cls-1" data-name="Path 410" transform="translate(-41.824 -168.579)"/>
+        <path id="Path_411" d="M246.489 351.979h9.1a.489.489 0 0 0 0-.979h-9.1a.489.489 0 1 0 0 .979z" class="cls-1" data-name="Path 411" transform="translate(-41.824 -225.643)"/>
+        <path id="Path_412" d="M66 324.426a.489.489 0 0 0 .489.489h5.872a.489.489 0 0 0 .489-.489 3.426 3.426 0 1 0-6.851 0zm3.426-2.447a2.451 2.451 0 0 1 2.4 1.957h-4.8a2.451 2.451 0 0 1 2.4-1.957z" class="cls-1" data-name="Path 412" transform="translate(129.368 -197.111)"/>
+        <path id="Path_413" d="M99.915 232.957a1.957 1.957 0 1 0-1.957 1.957 1.96 1.96 0 0 0 1.957-1.957zm-2.936 0a.979.979 0 1 1 .979.979.98.98 0 0 1-.979-.979z" class="cls-1" data-name="Path 413" transform="translate(100.836 -111.515)"/>
+        <ellipse id="Ellipse_14" cx=".758" cy=".379" class="cls-1" data-name="Ellipse 14" rx=".758" ry=".379" transform="translate(203.907 131.321)"/>
+        <path id="Path_414" d="M1.468 44h8.857a.489.489 0 0 0 0-.979H1.468a.49.49 0 0 1-.489-.489V28.34a.49.49 0 0 1 .489-.489h22.119a.49.49 0 0 1 .489.489v14.192a.49.49 0 0 1-.489.489H14.73a.489.489 0 1 0 0 .979h8.857a1.47 1.47 0 0 0 1.468-1.468V28.34a1.47 1.47 0 0 0-1.468-1.468h-7.634v-5.383a.489.489 0 0 0-.489-.489H9.591a.489.489 0 0 0-.489.489v5.383H1.468A1.47 1.47 0 0 0 0 28.34v14.192A1.47 1.47 0 0 0 1.468 44zm13.506-17.128h-1.957v-4.893h1.957zm-4.894-4.894h1.957v4.894h-1.956z" class="cls-1" data-name="Path 414" transform="translate(192.138 88.208)"/>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+/**
+ * Basic typography style for copy text
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $oxygen-bold;
+  margin: 0;
+  color: $heading-lighten;
+}
+h1, .heading1 {
+  font-size: $font-size-h1;
+  line-height: 1.13;  
+  letter-spacing: 1px; 
+}
+h2, .heading2 {
+	font-size: $font-size-h2;
+}
+h3, .heading3 {
+	font-size: $font-size-h3;
+}
+h4, .heading4 {
+	font-size: $font-size-h4;
+}
+
+.small-txt {
+	font-size: $font-size-base-small;
+}
+
+strong {
+  font-family: $oxygen-bold; 
+}
+a{color:$primary-color;}
+p{line-height: 21px;}
+address{font-style: normal;}
+
+

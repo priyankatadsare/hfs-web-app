@@ -1,0 +1,178 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+
+@mixin button-bg($bg, $text, $fillColor) {
+  background-color: $bg; 
+  color: $text;
+  fill: $fillColor;
+  position: relative;
+  &:hover {
+    @include transition(all 0.3s ease);
+  }
+}
+
+@mixin button-line($bg, $text, $border) {
+  color: $text;
+  border:1px solid $border;
+  background-color: $bg;
+  border-radius: 4px;
+  &:hover {
+  color:darken($text,8%);
+	border-color:darken($border,8%);
+    @include transition(color 0.3s ease);
+  }
+  &:active {
+    color:darken($text,25%);
+	border-color:darken($border,25%);
+  } 
+}
+
+@mixin buttonSize($height, $depth, $font-size){
+  height: $height;
+  padding: 0 10px;
+  min-width:150px;
+  font-size: $font-size;
+  line-height: $height - 2;
+  &:active, &:active i {
+    line-height: $height - 2;
+  }
+}
+
+.button{
+  color: #444;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  @include buttonSize(40px, 2px, 16px);
+  font-weight: 500;
+  @include transition(all 0.3s ease);
+
+  &.arrowBtn:after {
+    position: absolute;
+    content: "\e902";
+    font-family: 'clixicon';
+    right: 10px;
+    transform: rotate(180deg);
+  }
+  &.button-primary {
+      @include button-bg($primary-color, $white, $white);
+      &:hover{
+        background:darken($primary-color,8%); 
+      }
+  }
+
+  &.button-secondary {
+    @include button-bg($secondary-lighter-color, $white, $white);
+    &:hover{
+      background:darken($secondary-lighter-color,8%); 
+    }
+}
+
+} 
+
+.btn-line {
+  @include button-line($white, $text-color, rgba(40, 44, 71, 0.2));
+  box-shadow: 0 2px 4px 0 rgba(40, 44, 71, 0.25);
+}
+
+.btn-lineSecondary {
+  @include button-line($white, $secondary-lighter-color, $secondary-lighter-color);
+}
+
+.btn-linePrimary {
+  @include button-line($white, $primary-color, $primary-color);
+}
+
+.radius-btn {
+  border-radius: 50px;
+}
+
+.play-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #282c47;
+  position: relative;
+  vertical-align: middle;
+  box-shadow: 0 3px 6px 0 rgba(40, 44, 72, 0.3);
+
+  &::before {
+    position: absolute;
+		content: "";
+		width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid $white;
+    left: 50%;
+    margin-left: -2px;
+    top: 50%;
+    margin-top: -6px;
+  }
+}
+
+.btn-linePrimary {
+  @include button-line($white, $primary-color, $primary-color);
+}
+
+.button-xssmall {
+  @include buttonSize(18px, 0px, 11px);
+  min-width:50px;  
+  padding:0 5px;
+}
+
+.button-small {
+  @include buttonSize(30px, 2px, 12px);
+  min-width:125px;  
+}
+
+.button-customSmall { 
+  @include buttonSize(30px, 4px, 14px);
+  min-width:150px;  
+
+  @include breakpoint(mobile) { 
+    font-size: 12px;
+    min-width: auto;
+  }
+}
+.button-medium {
+  @include buttonSize(40px, 4px, 16px);
+  min-width:200px;
+}
+.button-large {
+  @include buttonSize(40px, 4px, 16px);
+  min-width:270px;
+}
+.button-xLarge {
+  @include buttonSize(40px, 5px, 16px);
+  min-width:370px;
+}
+
+.verified-btn {
+  i {
+    color: $green-color;
+  }
+}
+
+.tooltipBtn {
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2px 2px 0 rgba(40, 44, 71, 0.2);
+  border: solid 1px $text-color;
+  background-color: #ffffff;
+  padding: 0;
+  font-size: 10px;
+  border-radius: 50%;
+
+  &:focus, &:hover {
+    background-color: $text-color;
+    color: #fff;
+  }
+}
+
+
+  

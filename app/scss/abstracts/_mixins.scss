@@ -1,0 +1,161 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+@mixin on-event($self: false) {
+	@if $self {
+		&,
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	} @else {
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	}
+}
+
+/// Make a context based selector a little more friendly
+/// @param {String} $context
+@mixin when-inside($context) {
+	#{$context} & {
+		@content;
+	}
+}
+
+@mixin flex-center($direction) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: $direction;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-o-border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+	box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-o-box-shadow: $shadow;
+}
+@mixin transition($transition) {
+	transition: $transition;
+	-webkit-transition: $transition;
+	-ms-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+}
+@mixin background-size($bgSize) {
+	background-size: $bgSize;
+	-webkit-background-size: $bgSize;
+	-ms-background-size: $bgSize;
+	-moz-background-size: $bgSize;
+	-o-background-size: $bgSize;
+}
+@mixin center-div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin transform($transform) { 
+	-webkit-transform: $transform;
+	   -ms-transform: $transform;
+		-moz-transform: $transform;
+		  -o-transform: $transform;
+			 transform: $transform;
+  }
+
+/* margin padding spacing */
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+	@each $side in $sides {
+		.m-#{str-slice($side, 0, 1)}-#{$space} {
+			margin-#{$side}: #{$space}px;
+		}
+
+		.p-#{str-slice($side, 0, 1)}-#{$space} {
+			padding-#{$side}: #{$space}px;
+		}
+	}
+}
+
+@mixin breakpoint($point) {
+	@if $point==ex-large-desktop {
+		@media (max-width: 1154px) {
+			@content;
+		}
+	} @else if $point==tablet {
+		@media (max-width: 1023px) {
+			@content;
+		}
+	} @else if $point==sm-tablet {
+		@media (max-width: 992px) {
+			@content;
+		}
+	} @else if $point==ex-sm-tablet { 
+		@media (max-width: 768px) {
+			@content;
+		}
+	} @else if $point==mobile {
+		@media (max-width: 576px) {
+			@content;
+		}
+	} @else if $point==small-mobile {
+		@media (max-width: 359px) {
+			@content;
+		}
+	}@else if $point==small-device {
+		@media (max-width: 320px) {
+			@content;
+		}
+	}
+}
+
+
+@mixin  buttonGroup {
+	.btn-group{
+        margin: 70px 0;
+        button{
+            width: 197px;
+            + button{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@mixin placeholderColor {
+	&:focus{
+		outline: none;
+	}
+	&::placeholder { 
+		color: #28323c;	
+		opacity: 0.3;
+	  }
+	  
+	  &:-ms-input-placeholder { 
+		color: #28323c;	
+		opacity: 0.3;
+	  }
+	  
+	  &::-ms-input-placeholder {
+		color: #28323c;	
+		opacity: 0.3;
+	  }
+}

@@ -1,0 +1,328 @@
+.signin-account {
+  .nav-pills {
+    .nav-item {
+      padding: 10px 20px;
+      padding-top: 0;
+      @include breakpoint(mobile) {
+        padding: 10px;
+        padding-top: 0;
+      }
+
+      a.nav-link {
+        font-size: $font-size-base;
+        font-weight: 500;
+        text-align: left;
+        background: none;
+        border-radius: 0;
+        color: $text-color;
+        padding: 0;
+        padding-bottom: 10px;
+
+        &.active {
+          color: $secondary-light-color;
+          border-bottom: solid 2px $secondary-light-color;
+        }
+      }
+    }
+  }
+}
+.dashboard-heading {
+  font-size: $font-size-base + 2;
+  font-weight: 600;
+  text-align: left;
+  color: $text-color;
+  padding-bottom: 20px;
+  a{
+    margin-right: 15px;
+    color: $text-color;
+    vertical-align: middle;
+    &:hover, &:focus {
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    .clixicon-account {
+      font-size: 20px;
+    }
+}
+}
+.account-dashboard {
+  max-width: 970px;
+  .dashboard-inner {
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 rgba(133, 139, 147, 0.15);
+    background-color: $white;
+    padding: 20px 25px;
+
+    @include breakpoint(mobile) { 
+      padding: 15px;
+    }
+
+    .dashboard-documents {
+      .ddHeading {
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: rgba(40, 44, 71, 0.9);
+      }
+    
+
+    .dashboard-document {
+      width: 448px;
+      min-height: 70px;
+      border-radius: 2px;
+      border: solid 1px rgba(159, 160, 164, 0.2);
+      background-color: $white;
+      display: inline-flex;
+      justify-content: space-between;
+      padding: 15px;
+      align-items: center;
+
+     
+      
+      &:nth-child(2n+2) {
+        margin-left: 20px;
+      }
+      &:nth-child(-n+2) {
+        margin-bottom: 20px;
+      }
+      @include breakpoint(mobile) {
+        flex-direction: column;
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+        &:nth-child(2n+2) {
+          margin-left: 0;
+        }
+      }
+      h3 {
+        font-size: $font-size-base + 2;
+        font-weight: 500;
+        text-align: left;
+        color: $text-color;
+        @include breakpoint(mobile) {
+          padding-bottom: 15px;
+        }
+        .icon {
+          color: $secondary-light-color;
+          font-size: $font-size-base + 8;
+        }
+      }
+      .document-btn {
+        width: 144px;
+        height: 30px;
+        border-radius: 4px;
+        border: solid 1px $primary-color;
+        background-color: $white;
+        font-size: $font-size-base;
+        font-weight: 500;
+        text-align: center;
+        color: $primary-color;
+      }
+    }
+  }
+  }
+}
+.payment-inner {
+  max-width: 1050px;
+  .dashboard-payment {
+    justify-content: space-between;
+    @include breakpoint(mobile) {
+      flex-direction: column;
+    }
+    .clix-accordion {
+      width: 100%;
+    }
+    .payment-accordian {
+      border-radius: 4px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+      border: solid 1px rgba(75, 112, 184, 0.3);
+      max-width: 630px;
+      margin-bottom: 20px;
+      .dashboard-document {
+        width: 455px;
+        min-height: 70px;
+        border-radius: 2px;
+        border: solid 1px rgba(159, 160, 164, 0.2);
+        background-color: $white;
+        justify-content: space-between;
+        padding: 15px;
+        align-items: center;
+        margin-bottom: 15px;
+        @include breakpoint(mobile) {
+          width: auto;
+        }
+        .card-inner {
+          padding: 10px;
+          img {
+            padding: 0 5px;
+          }
+          .payment-text {
+            justify-content: space-between;
+            @include breakpoint(mobile) {
+              flex-direction: column;
+            }
+          }
+        }
+        h3 {
+          font-size: $font-size-base + 2;
+          font-weight: 500;
+          text-align: left;
+          color: $text-color;
+          cursor: pointer;
+          margin-bottom: 0;
+          line-height: 36px;
+          @include breakpoint(mobile) {
+           
+          }
+          .icon {
+            color: $secondary-light-color;
+            font-size: $font-size-base + 8;
+          }
+        }
+        .document-btn {
+          width: 144px;
+          height: 30px;
+          border-radius: 4px;
+          border: solid 1px $primary-color;
+          background-color: $white;
+          font-size: $font-size-base;
+          font-weight: 500;
+          text-align: center;
+          color: $primary-color;
+          text-decoration: none;
+          padding: 3px;
+        }
+      }
+    }
+    .payment-right {
+      width: 370px;
+      height: 413px;
+      padding: 15px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+      background-color: #546a96;
+      @include breakpoint(mobile) {
+        width: auto;
+        height: auto;
+      }
+      .payment-heading {
+        font-size: 20px;
+        font-weight: normal;
+        text-align: left;
+        color: $white;
+      }
+      .small-heading {
+        font-size: $font-size-base;
+        font-weight: 600;
+        text-align: left;
+        color:$white;
+        margin-bottom: 15px;
+      }
+      .loan-box {
+        width: 340px;
+        height: 309px;
+        border-radius: 4px;
+        box-shadow: 0 4px 6px 0 rgba(133, 139, 147, 0.15);
+        background-color: $white;
+        @include breakpoint(mobile) {
+          width: auto;
+          height: auto;
+          padding-bottom: 10px;
+        }
+        h4 {
+          background-color: rgba(0, 155, 222, 0.03);
+          height: 31px;
+          font-size: $font-size-base;
+          font-weight: 600;
+          text-align: left;
+          color: $text-color;
+          padding-top: 7px;
+          padding-left: 10px;
+
+          i {
+            color: $primary-color;
+            font-size: 20px;
+            vertical-align: text-bottom;
+          }
+        }
+        .amount-box{
+            .amount{
+                @include breakpoint(small-mobile) {
+                font-size: $font-size-base-small;
+                }
+            }
+        }
+        .heading {
+          font-weight: 600;
+          color: #4b70b8;
+        }
+        .at-content {
+          padding: 0 14px;
+        }
+        .at-row {
+          font-size: $font-size-base-small;
+          color: rgba(40, 44, 71, 0.8);
+          .at-col {
+            &:first-of-type {
+              width: 60%;
+              @include breakpoint(small-mobile) {
+                width: 77%;
+            }
+            }
+            &:nth-of-type(2) {
+              width: 40%;
+            }
+            &:last-child {
+              color: $text-color;
+              font-weight: 500;
+            }
+            span {
+              width: 89px;
+              height: 16px;
+              border-radius: 110px;
+              background-color: rgba(0, 155, 222, 0.1);
+              font-size: 8px;
+              font-weight: 500;
+              padding: 3px 8px;
+              text-align: left;
+              color: $secondary-light-color;
+              margin-left: 5px;
+              @include breakpoint(small-mobile) {
+                margin-left: 0;
+            }
+            }
+          }
+          .last {
+            font-size: $font-size-base;
+          }
+        }
+      }
+
+      .amount-tooltip {
+        max-width: 310px;
+        bottom: 0;
+        height: 162px;
+        top: auto;
+        @include breakpoint(mobile) {
+          width: 282px;
+          height: auto;
+        }
+        @include breakpoint(small-mobile) {
+		width: 245px;
+	    }
+        .heading {
+          font-size: $font-size-base;
+          @include breakpoint(mobile) {
+            font-size: $font-size-base-small;
+          }
+        }
+        .at-row {
+          font-size: $font-size-base;
+          @include breakpoint(mobile) {
+            font-size: $font-size-base-small;
+          }
+        }
+      }
+    }
+  }
+}

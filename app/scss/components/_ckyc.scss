@@ -1,0 +1,277 @@
+.ckyc-process {
+  h5 {
+    font-size: $font-size-base + 2;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text-color;
+    margin-bottom: 22px;
+  }
+  .ckyc-card {
+    //width: 290px;
+    height: 125px;
+    border-radius: 4px;
+    box-shadow: 0 3px 25px 0 rgba(40, 44, 71, 0.1);
+    background-color: $white;
+    margin-bottom: 20px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 60px;
+      height: 45px;
+      background: #f5f8ff url(../images/icons/kyc-card.svg) top right no-repeat;
+      top: 0;
+      right: 0;
+      position: absolute;
+      @include border-radius(0 0 0 30px);
+      background-position-x: 70%;
+      background-position-y: 30%;
+    }
+    h6{
+      font-size: $font-size-base;
+      font-weight: 600;
+      line-height: 1.21;
+      letter-spacing: normal;
+      text-align: left;
+      color: $text-color;
+      text-transform: uppercase;
+      padding: 18px 13px 8px;
+    }
+    .ckyc-number {
+      height: 40px;
+      background-color: #f2f4f7;
+      font-size: $font-size-base + 6;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-align: left;
+      color: $secondary-light-color;
+      padding-top: 5px;
+      padding-left: 13px;
+    }
+  }
+  .button-primary {
+    font-size: $font-size-base + 2;
+  }
+  .custom-control-label {
+    font-size: $font-size-base-small;
+  }
+ 
+
+}
+#webcamModal {
+  h5 {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: normal;
+    text-align: left;
+    color: $text-color;
+  }
+  .webcam-btn {
+    width: 150px;
+    height: 36px;
+    border-radius: 2px;
+    border: solid 1px $white;
+    position: absolute;
+    top: calc(50% - 18px);
+    right: calc(50% - 75px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    &:hover {
+      text-decoration: none;
+    }
+    @include breakpoint(ex-sm-tablet) {
+      top: calc(100% - 64px);
+    }
+  }
+  .small-img {
+    max-width: 114px;
+    height: auto;
+    border-radius: 50%;
+  }
+  ul.identity-list {
+    margin-left: 30px;
+    margin-top: 30px;
+    li {
+      margin-bottom: 15px;
+      text-align: left;
+      font-size: $font-size-base;
+      font-weight: 500;
+      line-height: 1.36;
+      text-align: left;
+      color: $text-color;
+      list-style: disc;
+      span {
+        color: #7e83a3;
+      }
+    }
+  }
+}
+.custom-radio {
+  &.identification-radio {
+    .icon {
+      i {
+        font-size: 62px;
+      }
+    }
+    :not(.custom-control) {
+      label {
+        background: $white;
+      }
+    }
+    label {
+      width: 200px;
+      max-width: 100%;
+      height: 150px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 0 rgba(40, 44, 71, 0.25);
+      border: solid 1px rgba(40, 44, 71, 0.2);
+      background-color: $white;
+      flex-direction: column;
+      @include transition(all .3s ease-in-out);
+      &:hover {
+        border: solid 1px $primary-color;
+        color: $primary-color;
+        .text-block {
+          .heading {
+            color: $primary-color;
+          }
+        }
+      }
+      .text-block {
+        margin-top: 12px;
+        .heading {
+          font-size: $font-size-base + 4;
+          font-weight: 500;
+          line-height: 1.44;
+          text-align: center;
+          color: $text-color;
+        }
+      }
+      .mobile-tick {
+        font-size: $font-size-base-small;
+        font-weight: 500;
+        line-height: 1.67;
+        text-align: left;
+        color: $green-color;
+      }
+    }
+    input[type="radio"] {
+      opacity: 0;
+      position: absolute;
+
+      &:checked + label {
+        border: solid 1px $primary-color;
+        color: $primary-color;
+        cursor: auto;
+        .heading {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+.checkmark {
+  display: inline-block;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: $green-color;
+  margin-right: 4px;
+  &:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 7px;
+    border: solid $white;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    margin-left: 4px;
+    margin-top: 2px;
+  }
+}
+.success-icon {
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  &:before {
+    content: "";
+    width: 60px;
+    height: 45px;
+    background: #f5f8ff url(../images/icons/kyc-verified.svg) top right
+      no-repeat;
+    top: 0;
+    right: 0;
+    position: absolute;
+    @include border-radius(0 0 0 30px);
+    background-position-x: 70%;
+    background-position-y: 30%;
+  }
+  &::after {
+    content: "";
+    display: block;
+    background: url(../images/tick.svg) center $white no-repeat;
+    position: absolute;
+    bottom: -18px;
+    right: -18px;
+    width: 58px;
+    height: 58px;
+    box-shadow: 0 0 10px 0 rgba(40, 44, 71, 0.1);
+    border: solid 2px $green-color;
+    border-radius: 50%;
+    // padding: 27px;
+    @include breakpoint(ex-sm-tablet) {
+      bottom: -8px;
+      right: -8px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+  &.error-icon {
+    &:before {
+      content: "";
+
+      background: #f5f8ff url(../images/icons/kyc-card.svg) top right no-repeat;
+      top: 0;
+      right: 0;
+      position: absolute;
+      @include border-radius(0 0 0 30px);
+      background-position-x: 70%;
+      background-position-y: 30%;
+    }
+    &::after {
+      display: block;
+      background: url(../images/error-icon.svg) center $white no-repeat;
+      position: absolute;
+      bottom: -18px;
+      right: -18px;
+      width: 58px;
+      height: 58px;
+      box-shadow: 0 0 10px 0 rgba(40, 44, 71, 0.1);
+      border: solid 2px #ff7761;
+      border-radius: 50%;
+      // padding: 27px;
+      @include breakpoint(ex-sm-tablet) {
+        bottom: -8px;
+        right: -8px;
+        width: 38px;
+        height: 38px;
+        background-size: 18px;
+      }
+    }
+  }
+}
+.two-col {
+  .col-xs-6 {
+    & + .col-xs-6 {
+      margin-left: 20px;
+    }
+  }
+}
+

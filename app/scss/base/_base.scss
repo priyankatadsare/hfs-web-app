@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	height: 100%;
+}
+
+body {
+	//font-family: 'Encode Sans', sans-serif;
+	font-family: $EncodeSans-Regular, sans-serif;
+	font-size: $font-size-base;
+	height: 100%;
+	line-height: 1.428571429;
+	color: $text-color;
+	background-color: #f8f8fc;
+	font-weight: 400;
+}
+
+/**
+   * Basic styles for links
+   */
+a {
+	/* color: $brand-color;*/
+	text-decoration: none;
+
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	li {
+		list-style: none;
+	}
+}
+
+strong {
+	font-weight: 500;
+}
+
+.absolute-link {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* over flow section */
+@include breakpoint(tablet) {
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+}
+
+@include breakpoint(sm-tablet) {
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+}
+
+@include breakpoint(mobile) {
+	body {
+		font-size: 12px;
+		line-height: 1.67;
+	}
+
+	.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	h3 {
+		font-size: 14px;
+	}
+
+	h4,
+	.heading4 {
+		font-size: 12px;
+	}
+}

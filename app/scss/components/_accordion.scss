@@ -1,0 +1,145 @@
+.clix-accordion {
+	.card {
+
+		//box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+		box-shadow: none;
+		//border: solid 1px rgba(75, 112, 184, 0.3);
+		border: none;
+		background-color: #ffffff;
+
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+
+		i.after {
+			display: none;
+		}
+
+		&.done {
+			.btn {
+				.icon {
+					border-radius: 50%;
+					background-color: $primary-color;
+					color: $white;
+					width: 30px;
+					height: 30px;
+					text-align: center;
+					line-height: 30px;
+					vertical-align: middle;
+				}
+				i.before {
+					display: none;
+				}
+				i.after {
+					display: inline-block;
+					font-size: 12px;
+				}
+			}
+
+			.btn-link {
+				color: $text-color;
+			}
+		}
+
+		&.active {
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+		}
+	}
+
+	.card-header {
+		background-color: transparent;
+		padding: 0;
+		border-bottom: solid 1px rgba(40, 44, 71, 0.08);
+	}
+
+	.btn-link {
+		color: $primary-color;
+		font-weight: 500;
+		width: 100%;
+		text-align: left;
+		padding: 10px;
+		border-radius: 4px 4px 0 0;
+		border: solid 1px rgba(40, 44, 71, 0.1);
+		border-bottom: 0;
+		align-items: center;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+
+		&.collapsed {
+			color: rgba(40, 44, 71, 0.4);
+			fill: rgba(40, 44, 71, 0.4);
+		}
+
+		.icon {
+			margin-right: 25px;
+			i {
+				font-size: 1.5rem;
+				display: block;
+			}
+			
+		}
+	}
+
+	.card-body {
+		border: solid 1px rgba(40, 44, 71, 0.1);
+		border-radius: 0 0 4px 4px;
+		border-top: 0;
+		
+	}
+
+	.grey-modal {
+		margin-bottom: -20px;
+	}
+}
+
+@include breakpoint(mobile){	
+	.card {
+		.card-header {
+			.btn {
+				font-size: 14px;
+				padding: 5px 8px;
+				white-space: normal;
+			}
+		}
+
+		.card-body {
+			padding: 15px;
+		}
+	}
+	.clix-accordion {
+		padding: 0 !important;
+		.card {
+			&.done {
+				.btn  {
+					.icon {
+						width: 20px;
+						height: 20px;
+						line-height: 20px;
+					}
+
+					i.after {
+						font-size: 8px;
+					}
+				}
+			} 
+		}
+		.btn-link {
+			.icon {
+				margin-right: 5px;
+				vertical-align: baseline;
+
+				i {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+	
+	.clix-accordion .card:not(:first-child)
+	 {
+		 margin-top: 15px;
+	 }
+  }

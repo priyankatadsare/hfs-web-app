@@ -1,0 +1,124 @@
+.range-slider-block {
+	.rangeslider  {
+		.rangeslider__fill {
+			background: $primary-color;
+		}
+		
+		.rangeslider__handle {
+			width: 20px;
+			height: 20px;
+			box-shadow: 0 2px 10px 0 rgba(40, 44, 71, 0.3);
+			border: none;
+
+			&:after {
+				width: 8px;
+				height: 8px;
+				background: $secondary-lighter-color;
+			}
+		}
+
+		&.rangeslider--horizontal {
+			height: 10px;
+			box-shadow: none;
+
+			.rangeslider__handle {
+				top: 50%;
+				margin-top: -10px;
+			}
+		}
+	}
+
+	.rangeInput {
+		position: relative;
+
+		.form-control {
+			height: 36px;
+		}
+		label {
+			font-size: 18px;
+			font-weight: 500;
+			color: $secondary-light-color
+		}
+
+		.priceInput {
+			text-align: center;
+			font-size: 20px;
+			font-weight: 700;
+			padding-left: 35px;
+			padding-right: 35px;
+		}
+
+		.priceBtn.btn-lineSecondary { 
+			border-radius: 4px;
+			font-size: 35px;
+			min-width: 32px;
+			height: 36px;
+			position: absolute;
+			span {
+				&:before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					line-height: 34px;
+				}
+			}
+		}
+
+		.minPrice {
+			left:0;
+			span {
+				&:before {
+				content: "-";
+				margin-top: -4px;
+				}
+			}
+		}
+
+		.maxPrice {
+			right: 0;
+			span {
+				&:before {
+				content: "+";
+				}
+			}
+		}
+	}
+
+	.range-slider-outer {
+		position: relative;
+
+		.range-text {
+			color: #858585;
+			position: absolute; 
+			bottom: -30px;
+
+			&.min {
+				left: 0;
+			}
+
+			&.max {
+				right: 0;
+			}
+		}
+
+		output {
+			position: absolute;
+			left: 50%;
+			bottom: 20px;
+			color: $secondary-lighter-color;
+			font-weight: 500;
+
+		}
+	}
+}
+
+@include breakpoint(mobile) {
+	.range-slider-block {
+		.rangeInput {
+			label {
+				font-size: 14px;
+			}
+		}
+	}
+}

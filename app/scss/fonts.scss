@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'clixicon';
+  src:  url('fonts/clixicon.eot?jzpg3r');
+  src:  url('fonts/clixicon.eot?jzpg3r#iefix') format('embedded-opentype'),
+    url('fonts/clixicon.ttf?jzpg3r') format('truetype'),
+    url('fonts/clixicon.woff?jzpg3r') format('woff'),
+    url('fonts/clixicon.svg?jzpg3r#clixicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="clixicon-"], [class*=" clixicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'clixicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.clixicon-paper:before {
+  content: "\e93b";
+}
+.clixicon-account:before {
+  content: "\e93c";
+}
+.clixicon-netbanking:before {
+  content: "\e92f";
+}
+.clixicon-wallet:before {
+  content: "\e937";
+}
+.clixicon-upi:before {
+  content: "\e938";
+}
+.clixicon-credit-card:before {
+  content: "\e939";
+}
+.clixicon-down-arrow:before {
+  content: "\e93a";
+}
+.clixicon-aadhar:before {
+  content: "\e930";
+}
+.clixicon-edit:before {
+  content: "\e931";
+}
+.clixicon-query:before {
+  content: "\e932";
+}
+.clixicon-quick-loan:before {
+  content: "\e933";
+}
+.clixicon-home:before {
+  content: "\e934";
+}
+.clixicon-education:before {
+  content: "\e935";
+}
+.clixicon-applications:before {
+  content: "\e936";
+}
+
+.clixicon-disbursal:before {
+  content: "\e921";
+}
+.clixicon-loan-disbursal:before {
+  content: "\e922";
+}
+
+.clixicon-upload:before {
+  content: "\e92d";
+}
+.clixicon-upload-colored:before {
+  content: "\e92e";
+}
+
+.clixicon-eye-cross:before {
+  content: "\e91f";
+}
+.clixicon-eye:before {
+  content: "\e920";
+}
+
+.clixicon-pdf-doc:before {
+  content: "\e918";
+}
+.clixicon-upload-file:before {
+  content: "\e919";
+}
+.clixicon-kyc-verification:before {
+  content: "\e91a";
+}
+.clixicon-clock:before {
+  content: "\e91b";
+}
+.clixicon-mobile-camera:before {
+  content: "\e91c";
+}
+.clixicon-webcam:before {
+  content: "\e91d";
+}
+.clixicon-identity-verification:before {
+  content: "\e91e";
+}
+
+.clixicon-pdfFormat:before {
+  content: "\e915";
+}
+.clixicon-dontEdit:before {
+  content: "\e917";
+}
+.clixicon-close:before {
+  content: "\e90c";
+  font-size: 18px;
+}
+.clixicon-thumb:before {
+  content: "\e90d";
+}
+.clixicon-kyc:before {
+  content: "\e90e";
+}
+.clixicon-verification:before {
+  content: "\e913";
+}
+.clixicon-getOffer:before {
+  content: "\e914";
+}
+.clixicon-tick:before {
+  content: "\e900";
+}
+.clixicon-arrow-down:before {
+  content: "\e901";
+}
+.clixicon-arrow-left:before {
+  content: "\e902";
+}
+.clixicon-bankStatement:before {
+  content: "\e903";
+}
+.clixicon-employment-verification:before {
+  content: "\e904";
+}
+.clixicon-female:before {
+  content: "\e905";
+}
+.clixicon-income-verification:before {
+  content: "\e906";
+}
+.clixicon-loan-requirement:before {
+  content: "\e907";
+}
+.clixicon-male:before {
+  content: "\e908";
+}
+.clixicon-netbanking:before {
+  content: "\e909";
+}
+.clixicon-others:before {
+  content: "\e90a";
+}
+.clixicon-personal-info:before {
+  content: "\e90b";
+}
+.clixicon-professional-info:before {
+  content: "\e90f";
+}
+.clixicon-question:before {
+  content: "\e910";
+}
+.clixicon-rupee:before {
+  content: "\e911";
+}
+.clixicon-salaried:before {
+  content: "\e912";
+}
+.clixicon-self:before {
+  content: "\e916";
+}

@@ -1,0 +1,295 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.clix-header {
+  height: 70px;
+  background-color: #fff;
+}
+
+.main {
+  padding: 20px 0;
+  position: relative;
+}
+
+.slide-main {
+  overflow: hidden;
+}
+
+.clix-container {
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  max-width: 1000px;
+  width: 100%;
+  z-index: 2;
+}
+
+.main-in {
+  max-width: 770px;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  -moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+
+.main-heading {
+  color: $secondary-light-color;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.heading-blk {
+  margin-bottom: 20px;
+}
+
+.small-link {
+  a {
+    color: #9295a7;
+    font-size: 10px;
+    margin-left: 20px;
+  }
+}
+
+.icon {
+  margin-right: 5px;
+  vertical-align: bottom;
+  display: inline-block;
+
+  &.arrow-right {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  svg {
+    display: block;
+  }
+}
+
+button {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.bottom-fields,
+.gender-blk {
+  transition: all ease 0.5s;
+  height: 0;
+  overflow: hidden;
+  transform: scale(0);
+
+  &.active {
+    height: 100%;
+    transform: scale(1);
+  }
+}
+
+.listUl {
+  padding-left: 20px;
+
+  li {
+    list-style: disc;
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.msg-heading {
+  box-shadow: 0 5px 8px 0 rgba(40, 44, 71, 0.05);
+  background-color: #fff;
+  border-radius: 4px 4px 0 0;
+  min-height: 93px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    background-color: $secondary-lighter-color;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    margin-top: -35px;
+    margin-left: -40px;
+  }
+
+  .icon {
+    z-index: 1;
+    margin-left: 25px;
+  }
+
+  .heading-content {
+    strong {
+      color: $secondary-lighter-color;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+
+      i {
+        font-size: 15px;
+      }
+
+      span {
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.income-button {
+  button {
+    i:not(.clixicon-tick) {
+      font-size: 22px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.recommend {
+  color: $green-color;
+  font-size: 10px;
+  position: absolute;
+  right: 25px;
+
+  i {
+    background-color: $green-color;
+    color: $white;
+    border-radius: 50%;
+    font-size: 5px;
+    padding: 3px;
+    vertical-align: middle;
+    margin-right: 2px;
+  }
+}
+
+.income-verification-note {
+  line-height: 1.86;
+}
+
+.pipeUL {
+  li {
+    &:not(:first-child) {
+      border-left: 1px solid rgba(40, 44, 71, 0.1);
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+
+    a {
+      color: $text-color;
+    }
+  }
+}
+
+.notes {
+  color: rgba(40, 44, 71, 0.5);
+}
+
+.loan-option {
+  border-top: 1px solid #f2f2f2;
+
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .custom-radio {
+    margin-left: 10px;
+
+    label {
+      min-height: 30px !important;
+      min-width: 80px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.income-hidden-blk {
+  display: none;
+}
+
+.clixicon-rupee {
+  &:before {
+    font-size: 0.8rem;
+  }
+}
+
+@include breakpoint(mobile) {
+  .pipeUL {
+    li {
+      &:not(:first-child) {
+        margin-left: 5px;
+        padding-left: 5px;
+      }
+    }
+  }
+  .clix-container {
+    padding: 0 !important;
+    background-color: transparent;
+  }
+
+  .heading-blk {
+    .small-link {
+      display: none;
+    }
+  }
+
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .col {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .loan-option {
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    .custom-radio {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+
+  .heading-blk {
+    margin-bottom: 10px;
+    .main-heading {
+      font-size: 16px;
+    }
+    .small-link,
+    .on-close-hide {
+      display: none !important;
+    }
+  }
+
+  .clixicon-rupee {
+    &:before {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+.warning {
+  color: #dc3545;
+  font-size: 12px;
+}

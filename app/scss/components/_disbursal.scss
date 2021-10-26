@@ -1,0 +1,359 @@
+.disbursalLoan {
+  .grey-modal {
+    margin-bottom: 0;
+  }
+}
+
+.disbursal-bank-detail {
+  h4 {
+    font-size: $font-size-base;
+    font-weight: 600;
+    text-align: left;
+    color: $secondary-light-color;
+
+    @include breakpoint(mobile) {
+      font-size: $font-size-base-small;
+    }
+  }
+
+  .name {
+    font-size: $font-size-base-small;
+    font-weight: normal;
+    
+    margin-bottom: 5px;
+    color: rgba(40, 44, 71, 0.8);
+  }
+
+  .value {
+    font-weight: 500;
+   color: rgba(40, 44, 71, 0.9);
+
+    span {
+      font-size: 12px;
+      text-align: left;
+      color: rgba(40, 44, 71, 0.9);
+      display: block;
+    }
+  }
+
+  .bank-logo {
+    font-size: $font-size-base + 4;
+    font-weight: 500;
+    line-height: 1.44;
+    text-align: left;
+    color: $text-color;
+    padding-bottom: 10px;
+    @include breakpoint(mobile) {
+      font-size: $font-size-base;
+    }
+
+    .btn {
+      border-radius: 2px;
+      border: solid 1px $green-color;
+      font-size: $font-size-base;
+      font-weight: 500;
+      text-align: left;
+      color: $green-color;
+      margin-left: 15px;
+      padding: 1px 12px;
+    }
+  }
+
+  .acount-detail {
+    font-size: $font-size-base;
+    font-weight: 500;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    padding-bottom: 5px;
+    color: rgba(40, 44, 71, 0.6);
+
+    span {
+      color: $text-color;
+    }
+  }
+
+  .disbursal-personal {
+    span {
+      font-size: $font-size-base + 2;
+      font-weight: bold;
+      text-align: left;
+      color: $text-color;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn {
+      border-radius: 3px;
+      border: solid 1px $secondary-lighter-color;
+      font-size: $font-size-base-small;
+      line-height: 10px;
+      text-align: left;
+      color: $secondary-lighter-color;
+      padding: 4px 10px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .amount-transfer {
+    width: 289px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #f2f9fc;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    font-weight: 600;
+    color: $text-color;
+
+    span {
+      margin: 10px;
+      font-size: $font-size-base + 2;
+      font-weight: 600;
+
+      text-align: left;
+      color: #4b70b8;
+    }
+  }
+}
+
+.emanadate-info {
+  border-radius: 4px;
+  background-color: #fbfbfb;
+  padding: 10px 18px 18px;
+}
+
+.cong-emanadate {
+  font-size: $font-size-base + 2;
+  font-weight: 500;
+  text-align: center;
+  color: $text-color;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.emanadate-number {
+  font-size: $font-size-base;
+  font-weight: 500;
+  color: rgba(75, 112, 184, 0.8);
+  border: dotted 1px rgba(75, 112, 184, 0.8);
+  width: 168px;
+  border-radius: 4px;
+  margin: 0 auto;
+  height: 30px;
+  line-height: 28px;
+
+  span {
+    color: $secondary-lighter-color;
+  }
+}
+
+.emanadate-img {
+  width: 150.1px;
+  height: 150.1px;
+  background-color: #e5edff;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-icon::after {
+  content: "";
+  display: block;
+  background: url(../images/tick.svg) center $white no-repeat;
+  position: absolute;
+  bottom: 5px;
+  right: -4px;
+  width: 58px;
+  height: 58px;
+  box-shadow: 0 0 10px 0 rgba(40, 44, 71, 0.1);
+  border: solid 2px $green-color;
+  border-radius: 50%;
+}
+
+.ifsc-link {
+  color: $secondary-lighter-color !important;
+  text-decoration: none;
+  top: 74% !important;
+}
+
+.complete-process {
+  font-size: $font-size-base;
+
+  text-align: center;
+  color: $secondary-light-color;
+}
+
+.disbursal-account-details,
+.disbursal-account,
+.disbursal-verify-details,
+.disbursal-successful,
+.e-payment-instruction,
+.verifying-bank-details,
+.verified-bank-details {
+  height: 0;
+  transform: scale(0);
+
+  &:not(.active) {
+    overflow: hidden;
+  }
+
+  &.active {
+    height: 100%;
+    transform: scale(1);
+    transition: all ease 0.5s;
+  }
+}
+
+.nach-bank {
+  width: 135px;
+  height: 23px;
+  border-radius: 70px;
+  background-color: rgba(32, 178, 116, 0.1);
+  font-size: $font-size-base-small;
+  font-weight: 500;
+  color: $green-color;
+  padding: 5px 12px;
+  float: right;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  @include breakpoint(mobile) {
+  width: 115px;
+  font-size: 10px;
+  }
+  img {
+  margin-right: 6px;
+  }
+  }
+.e-payment-instruction {
+  &.grey-bg {
+    background-color: #fbfbfb; 
+  }
+  .head {
+    border-bottom: solid 1px rgba(75, 112, 184, 0.2);
+    padding: .9rem .8rem;
+    h6 {
+      margin: 0;
+    }
+  }
+}
+.waiting-img {
+  max-width: 115px;
+  margin: 3rem auto !important;
+}
+.waiting-text {
+  font-size: $font-size-base + 2;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #545872;
+}
+.verified-bank-details {
+  .header {
+    @include flex-center(row);
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .wrap-title {
+      @include flex-center(row);
+      justify-content: space-between;
+      .name {
+        font-size: $font-size-base + 4;
+        font-weight: 500;
+        line-height: 1.44;
+        color: $text-color;
+        margin: 0 15px;
+      }
+      .verified-tag {
+        width: 76px;
+        height: 25px;
+        @include border-radius(2px);
+        font-size: $font-size-base;
+        border: solid 1px #20b274;
+        background-color: $white;
+        font-weight: 500;
+        line-height: 1.86;
+        color: #20b274;
+        @include flex-center(row);
+      }
+    }
+    .edit-details {
+      font-size: $font-size-base;
+      font-weight: 600;
+      line-height: 1.43;
+      color: #009bde;
+      @include flex-center(row);
+      img {
+        width: 12px;
+        margin-right: 8px;
+      }
+  }
+  }
+  .detail-row {
+    margin-top: 10px;
+    .title {
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.86;
+      letter-spacing: normal;
+      text-align: left;
+      color: rgba(40, 44, 71, 0.6);
+      margin-right: 8px;
+  }
+  }
+}
+
+.edit-details {
+  font-size: $font-size-base;
+  font-weight: 600;
+  line-height: 1.43;
+  color: #009bde;
+  float: right;
+  img {
+  width: 12px;
+  margin-right: 8px;
+  }
+  }
+
+
+@include breakpoint(mobile) { 
+  .disbursal-bank-detail {
+    .acount-detail {
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .nice-select {
+  .option {
+  font-size: $font-size-base-small;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  }
+  }
+  .disbursal-watch{
+  img{
+  max-width: 150px;
+  }
+  }
+  .congratulation-container {
+  padding: 10px;
+  .cong-disbursal-msg {
+  .cong-msg {
+  font-size: $font-size-base + 2;
+  }
+  }
+  p{
+  font-size: $font-size-base + 2;
+  }
+  }
+  }

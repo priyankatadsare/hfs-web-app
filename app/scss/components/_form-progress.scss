@@ -1,0 +1,68 @@
+.progress {
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 0;
+	overflow: inherit;
+	margin-left: -45px;
+
+	.progress-bar {
+		background-color: $primary-color;
+		width: 100%;
+		transition: height .6s ease;
+
+		.circle {
+			content: "";
+			width: 9px;
+			height: 9px;
+			background-color: #fff;
+			position: absolute;
+			border: 2px solid $primary-color;
+			left: 0;
+			margin-left: -3px;
+			border-radius: 50%;
+			transition: all .6s ease;
+		}
+	}
+}
+
+.progress-form {
+	position: relative;
+
+		&:before {
+			width: 3px;
+			height: 100%;
+			background-color: $primary-color;
+			background-image: linear-gradient($primary-color, #e9ecef);
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 20px;
+		}
+	.progress-form-inn {
+		padding-left: 45px;
+	}
+	form {
+		
+		position: relative;
+	}
+}
+
+
+@include breakpoint(mobile){
+	.progress {
+		margin-left: -20px;
+	}
+
+	.progress-form{
+		.progress-form-inn {
+			padding-left: 20px;
+		}
+
+		&::before {
+			left: 15px;
+		}
+	}
+}

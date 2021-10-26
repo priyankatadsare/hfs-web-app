@@ -1,0 +1,636 @@
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.blueTag {
+  background-color: rgba(0, 155, 222, 0.1);
+  color: $secondary-light-color;
+  font-weight: 500;
+  padding: 0 15px;
+  border-radius: 100px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+.account-main {
+  padding: 20px 0;
+  .action-cards {
+    margin-top: 100px;
+
+    @include breakpoint(mobile) {
+      margin-top: 50px;
+    }
+  }
+  .action-card-block {
+    background-color: $white;
+  }
+}
+
+.icon-heading {
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  i {
+    font-size: 28px;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+  }
+}
+
+.am-blocks {
+  .am-block {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+    .sub-heading {
+      color: $secondary-light-color;
+      font-weight: 500;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .maTabs .nav {
+      margin-bottom: 25px;
+    }
+    .am-contBlk {
+      border-radius: 4px;
+      box-shadow: 0 4px 6px 0 rgba(133, 139, 147, 0.15);
+      background-color: #ffffff;
+      padding: 20px;
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+
+      .app-detail {
+        .app-detailBlk {
+          &:not(span) {
+            font-weight: 500;
+          }
+          span {
+            font-size: 12px;
+            color: rgba(40, 44, 71, 0.8);
+            display: block;
+
+            @include breakpoint(mobile) {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      &.app-prev {
+        display: flex;
+        justify-content: space-between;
+        @include breakpoint(mobile) {
+          flex-direction: column;
+        }
+
+        .btn {
+          margin-top: 15px;
+
+          @include breakpoint(mobile) {
+            width: 100%;
+          }
+        }
+        .app-detailBlk {
+          &:not(:first-child) {
+            margin-left: 60px;
+
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              padding-left: 10px;
+              border-left: 1px solid #f2f2f2;
+            }
+          }
+        }
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 10px;
+
+          .tag {
+            font-size: 14px;
+            color: #304877;
+            font-weight: 500;
+            min-width: 100px;
+            height: 24px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      &.loanBlk {
+        padding: 0;
+
+        .app-detail {
+          justify-content: space-between;
+          align-items: center;
+          display: flex;
+
+          @include breakpoint(mobile) {
+            display: block;
+          }
+
+          @include breakpoint(sm-tablet) {
+            display: block;
+          }
+
+          .ltitle {
+            font-size: 16px;
+            font-weight: 600;
+            background-color: rgba(0, 155, 222, 0.03);
+            height: 85px;
+            line-height: 50px;
+            position: relative;
+            i {
+              color: $primary-color;
+              font-size: 24px;
+            }
+
+            .viewLoanBtn {
+              display: none;
+              color: $text-color;
+              background-color: transparent;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+
+              &:after {
+                margin-top: -6px;
+              }
+              @include breakpoint(mobile) {
+                display: inline-block;
+              }
+            }
+          }
+          .app-detailBlk {
+            padding: 20px;
+            @include breakpoint(mobile) {
+              padding: 10px;
+              height: auto;
+              line-height: initial;
+            }
+            @include breakpoint(sm-tablet) {
+              padding: 10px;
+              height: auto;
+              line-height: initial;
+            }
+
+            &:not(.ltitle):not(.adBtnBlk) {
+              @include breakpoint(mobile) {
+                width: 49%;
+                display: inline-block;
+              }
+
+              @include breakpoint(sm-tablet) {
+                width: 49%;
+                display: inline-block;
+              }
+            }
+          }
+        }
+
+        .viewLoanBtn {
+          background-color: rgba(223, 14, 111, 0.05);
+          font-weight: 500;
+          text-align: left;
+          position: relative;
+
+          &.collapsed:after {
+            transform: rotate(0deg);
+            transition: all ease 0.4s;
+          }
+          &:after {
+            content: '\e901';
+            font-family: 'clixicon' !important;
+            position: absolute;
+            font-size: 8px;
+            right: 10px;
+            top: 50%;
+            margin-top: -14px;
+            transform: rotate(-180deg);
+            transition: all ease 0.4s;
+          }
+
+          @include breakpoint(mobile) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .collapseCard {
+      border-top: 1px solid #f2f2f2;
+      padding: 15px 20px;
+
+      @include breakpoint(mobile) {
+        padding: 15px 0;
+      }
+    }
+  }
+}
+
+.maTabs {
+  .nav-tabs .nav-link {
+    color: $text-color;
+    font-weight: 500;
+    border: none;
+    position: relative;
+
+    &:before {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      content: '';
+      position: absolute;
+      background-color: $secondary-light-color;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease-out;
+    }
+
+    &.active {
+      color: $secondary-light-color;
+      background-color: transparent;
+
+      &::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+}
+
+.collapseCard {
+  .cardBlk {
+    border-radius: 4px;
+    height: 100%;
+    border: solid 1px rgba(40, 44, 71, 0.1);
+    padding: 15px;
+    position: relative;
+
+    @include breakpoint(mobile) {
+      border: none;
+    }
+    .absoluteBtn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 5px;
+      height: 30px;
+      text-decoration: underline;
+
+      i {
+        font-size: 20px;
+      }
+    }
+
+    .cTitle {
+      color: $secondary-light-color;
+      font-weight: 600;
+    }
+    .card-details {
+      .card-detail {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint(mobile) {
+          flex-direction: column;
+          align-items: initial;
+        }
+
+        .left {
+          color: rgba(40, 44, 71, 0.8);
+          @include breakpoint(mobile) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+
+        .right {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .btn {
+      font-size: 14px;
+      font-weight: 400;
+      height: 36px;
+      padding: 0 14px;
+
+      @include breakpoint(mobile) {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    .amountPay {
+      height: 50px;
+      border-radius: 4px;
+      background-color: #f2f9fc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+      margin-top: 25px;
+      position: relative;
+
+      &.active {
+        .price {
+          color: $text-color;
+          .amountInfo {
+            display: none;
+          }
+        }
+
+        .amountCard {
+          transform: scaleY(1);
+          transform-origin: bottom;
+        }
+      }
+      .price {
+        font-size: 16px;
+        font-weight: 600;
+        color: $secondary-light-color;
+        transition: color 0.4s ease-out;
+        .amountInfo {
+          vertical-align: text-bottom;
+          cursor: pointer;
+          margin-left: 15px;
+        }
+      }
+
+      .amountCard {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        bottom: 50px;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        box-shadow: 0 0 20px #f2f2f2;
+        transition: transform 0.4s ease-out;
+
+        .close {
+          font-size: 14px;
+          padding: 10px;
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          i:before {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.adBtnBlk {
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+.maCards {
+  .maCard {
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 rgba(133, 139, 147, 0.15);
+    background-color: #fff;
+    padding: 20px 15px;
+    color: $text-color;
+    position: relative;
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+
+    @include breakpoint(mobile) {
+      margin-top: 30px;
+    }
+    &.blueCard {
+      background-color: #546a96;
+      color: #fff;
+      overflow: hidden;
+      text-align: center;
+      &:before {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        opacity: 0.2;
+        background-color: #314572;
+        top: -50px;
+        left: -50px;
+      }
+
+      .maCard {
+        margin-top: 15px;
+      }
+    }
+
+    .iconHead {
+      background-color: rgba(0, 155, 222, 0.03);
+      font-weight: 600;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 5px 15px;
+      i {
+        color: $primary-color;
+        font-size: 20px;
+        vertical-align: text-bottom;
+      }
+    }
+    .maTitle {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 1;
+    }
+    .gif-main {
+      @include breakpoint(mobile) {
+        max-width: 250px;
+        margin: 0 auto;
+      }
+    }
+    .maSubTitle {
+      margin-top: 15px;
+    }
+
+    .cardList {
+      li {
+        &:not(:first-child) {
+          margin-top: 5px;
+          padding-top: 5px;
+        }
+        a {
+          color: $secondary-light-color;
+          text-decoration: underline;
+          i {
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .link {
+      color: $secondary-light-color;
+      text-decoration: underline;
+    }
+
+    .meterText {
+      font-weight: 600;
+    }
+
+    .flexData {
+      .flexRow {
+        flex-direction: column;
+        display: inline-flex;
+        width: 49%;
+        margin-top: 10px;
+        span {
+          font-size: 12px;
+          color: rgba(40, 44, 71, 0.8);
+        }
+      }
+    }
+  }
+}
+
+.flexData {
+  .flexRow {
+    display: flex;
+  }
+}
+
+.divTableRow {
+  .divTableCol {
+    @include breakpoint(mobile) {
+      margin-top: 5px;
+    }
+    .name {
+      color: rgba(40, 44, 71, 0.8);
+      font-size: 12px;
+    }
+    .value {
+      color: rgba(40, 44, 71, 0.9);
+      font-weight: 500;
+    }
+  }
+}
+
+.profileImgRow {
+  .imgPrev {
+    img {
+      border-radius: 4px;
+      margin-right: 15px;
+    }
+    .pName {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .blueTag {
+    border-radius: 5px;
+    height: 29px;
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  .editBtn {
+    font-weight: 600;
+    margin-left: 20px;
+  }
+
+  .btnRow {
+    @include breakpoint(mobile) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.editProfile {
+  .divTableRow {
+    flex-wrap: wrap;
+    .divTableCol {
+      &:first-child {
+        width: 100%;
+      }
+      &:not(:first-child) {
+        flex: 1;
+      }
+    }
+  }
+
+  .imgPrev {
+    @include breakpoint(mobile) {
+      flex-direction: column;
+    }
+
+    .pName {
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+a {
+  i {
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.editFormBlk {
+  max-width: 70%;
+  margin-top: 40px;
+
+  @include breakpoint(mobile) {
+    max-width: 100%;
+  }
+
+  .efHeading {
+    color: rgba(40, 44, 71, 0.9);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+}
+
+.myProfile {
+  .dashboard-documents {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: solid 1px rgba(40, 44, 71, 0.08);
+  }
+}
+
+.sec-heading {
+  color: $secondary-light-color;
+  font-weight: 600;
+}
